@@ -9,7 +9,7 @@ int isMultiple(int a, int b) {
 }
 
 int main(){
-    printf("digite um jfbkjn: ");
+    printf("digite um numero: ");
     int number, divisor;
     scanf("%d", &number);
     printf("digite o divisor: ");

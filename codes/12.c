@@ -9,7 +9,7 @@ int fatorial(int a) {
 
 
 int main() {
-    printf("Digite um niebefbef: ");
+    printf("Digite um numero: ");
     int number;
     scanf("%d", &number);
     printf("O fatorial é: %d", fatorial(number));

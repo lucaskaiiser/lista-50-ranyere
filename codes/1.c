@@ -10,5 +10,5 @@ int main() {
     scanf("%d", &numeroA);
     printf("digite o segundo número:");
     scanf("%d", &numeroB);
-    printf("A soma dos dois é: %.2f\n", soma(numeroA, numeroB));
+    printf("A soma dos dois é: %d\n", soma(numeroA, numeroB));
 }
