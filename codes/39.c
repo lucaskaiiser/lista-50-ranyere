@@ -1,15 +1,21 @@
 #include <stdio.h>
-int main() {
-    int n, a = 0, b = 1, temp;
-    printf("Digite um número inteiro: ");
-    scanf("%d", &n);
-    printf("Sequência de Fibonacci até %d:\n", n);
-    while (a <= n) {
-        printf("%d ", a);
-        temp = a;
+
+void fibo(int n) {
+    int a = 0, b = 1, next;
+    printf("%d e %d ", a, b);
+    for (int i = 2; i < n; i++) {
+        next = a + b;
+        printf("%d ", next);
         a = b;
-        b = temp + b; 
+        b = next;
     }
     printf("\n");
+}
+
+int main() {
+    int valor;
+    printf("Digite um numero: ");
+    scanf("%d", &n);
+    fibo(valor);
     return 0;
 }

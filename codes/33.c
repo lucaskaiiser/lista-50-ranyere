@@ -1,24 +1,23 @@
 #include <stdio.h>
-#include <math.h>
+
+int armstrong(int n) {
+    int original = n, soma = 0;
+    while (n != 0) {
+        int dig = n % 10;
+        soma += dig * dig * dig;
+        n /= 10;
+    }
+    return soma == original;
+}
+
 int main() {
- int numero, temp, soma = 0, digitos = 0;
- printf("Digite um número inteiro: ");
- scanf("%d", &numero);
- temp = numero;
- while (temp != 0) {
- temp /= 10;
- digitos++;
- }
- temp = numero;
- while (temp != 0) {
- int digito = temp % 10;
- soma += pow(digito, digitos);
- temp /= 10;
- }
- if (soma == numero) {
- printf("O número é um número de Armstrong.\n");
- } else {
- printf("O número não é um número de Armstrong.\n");
- }
- return 0;
+    int n;
+    printf("me informe um numero para verificar se eh armstrong: ");
+    scanf("%d", &n);
+    if (armstrong(n)) {
+        printf("O numero e de Armstrong.\n");
+    } else {
+        printf("O numero nao e de Armstrong.\n");
+    }
+    return 0;
 }
